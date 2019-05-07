@@ -1,13 +1,13 @@
-\documentclass{article}
+\documentclass{article}[11pt]
 \usepackage[utf8]{inputenc}
 \usepackage[affil-it]{authblk}
 \usepackage{tabularx,colortbl}
-
+\usepackage{hyperref}
 \usepackage[dvipsnames]{xcolor}
 
 \usepackage{trackchanges}
 
-%%   TrackChanges adds the following 5 commands to allow for collaborative 
+%%   TrackChanges adds the following 5 commands to allow for collaborative
 %%   editing of LaTeX documents.
 %%
 %%     \add[editor]{text to add}
@@ -16,9 +16,11 @@
 %%     \annote[editor]{text to annotate}{note}
 %%     \note[editor]{note}
 
-\title{Advanced Scientific Programming in Python - Latin America}
+\title{%
+Summer School: Advanced Scientific Programming in Python - Latin America \linebreak
+  \large Project Proposal [Draft 07.05.2019]}
 \date{July 2020}
-\author{Location}
+\author{M\'exico City, M\'exico}
 
 \begin{document}
 \maketitle
@@ -26,62 +28,93 @@
 \begin{center}
 \end{center}
 
-\section*{Organization Committee}
+\section*{Scope}
+The summer school Advanced Scientific Programming in Python (ASPP) - Latin America will follow the structure and curriculum of the previously organized schools in Europe (2008-2019) and the Asia-Pacific region (2018, 2019). This highly successful summer schools have shown that there is a need for  teaching scientists the principles of \emph{scientific computing and software engineering} in the Python programming language. The goal of this intensive programming workshop is to teach a selection of advanced programming techniques and best practices in  software development which are standard in the industry, to researchers in the natural and social sciences, engineering and mathematics.\\
+
+The tools and concepts introduced in this workshop will help researchers spend less time writing, debugging and understanding computer programs. In addition, we expect that after attending this course participants will be able to contribute to the open-source scientific software community. With only a week of lectures, we accept that these ambitious goals will be at best partially realized. Nonetheless, the participants will be exposed to a suite of resources which, if studied and practiced, will help to train a generation of future scientists to be able to write better code, but also to make it reusable and easy to understand in case someone wants to reproduce their results.\\
+
+The course will  consist of lectures and discussions along with practical hands-on exercises which will supplement the lectures and will let participants practice the techniques. The participants are assumed to have prior knowledge (at the level of a competent user) on some high-level programming language used in scientific computing (for example, C, C++, Java, Fortran, MATLAB, etc.) and a basic knowledge of Python. The lectures will move at a rapid, though pedagogical pace. In general, the material covered will be more than the average amount that a participant can digest in a single week. Therefore, it will be mandatory that the participants familiarize themselves with some (online) prerequisite  material that we will provide. Moreover, we encourage participants to continue with further study and implementation of the techniques after the course.\\
+
+The course will not be an introductory course to the Python programming language, though questions on basic features of the language will be refreshed as we go along the lectures if necessary. It will also not be a specialized course on software engineering or computer science. Rather, the lectures will be focused on the needs of scientists who need to optimize their software work-flow. Correspondingly, there will be a strong hands-on component, where participants are encouraged and expected to participate, discuss and proactively learn not only from the faculty but also from other participants. 
+
+%(try to address the needs of all scientist from various disciplines).
+%(as well as to facilitate the reproducibility, collaboration and maintenance of their codes)
+
+\section*{Organizing Committee}
 \begin{itemize}
-    \item Josu\'e Mart\'inez Moreno (head) from the Research School of Earth Sciences of the Australian National University
-    \item Richardo M\'endez Fragoso form the School off Sciences of the National Autonomous University of Mexico.
-    \item Carlos Echeverr\'ia Serur from the Institut für Mathematik of the Technische Universität Berlin.
-    \item Luis Garc\'ia Ramos from the Institut für Mathematik of the Technische Universität Berlin.
-    \item \note[add]{Look for and add someone from currently in Latin America}
-    \item \note[add]{We should add someone else in Mexico so they can help Rich later on with the local organization (@Rich Could you suggest someone?).}
-    %\item Tiziano Zito from the Institut für Mathematik of the Technische Universität Berlin.
+
+    \item Carlos Echeverr\'ia Serur, PhD Student at the Institut f\"ur Mathematik of the Technische Universit\"at Berlin (Alumnus ASPP-Europe 2018).
+
+    \item Luis Garc\'ia Ramos, PhD Student at the Institut f\"ur Mathematik of the Technische Universit\"at Berlin. (Alumnus ASPP-Europe 2018).
+    
+        \item Josu\'e Mart\'inez Moreno (head), PhD Student at Research School of Earth Sciences of the Australian National University, Canberra (Alumnus ASPP-APAC 2019).
+
+        \item Ricardo M\'endez Fragoso, Professor at Department of Physics, School of Sciences of the National Autonomous University of Mexico, (Invited to ASPP-Europe 2019).
+    
+    \item  Florencia Noriega, Professor of Software Engineering at CODE University of Applied Sciences, Berlin (Alumna ASPP-Europe 2016).
+  
+      \item Tiziano Zito, from the Institut f\"ur Psychologie of the Humboldt Universit\"at zu Berlin. (Co-Founder of ASPP-Europe)
+
+    %\item Paula Sanz Le\'on, 
+    % \item Erin Mc Kiernan,  Professor in the Department of Physics at the National Autonomous University of Mexico.
+    %\item item \note[add]{We should add someone else in Mexico so they can help Rich later on with the local organization (@Rich Could you suggest someone?).}
+   % \item
 \end{itemize}
 
 \section*{Faculty}
 
+\subsection*{Lecturers (Preliminary List)}
 \begin{itemize}
-    \item Josu\'e Mart\'inez Moreno
-    \item Ricardo M\'endez Fragoso
-    \item Carlos Echeverr\'ia Serur
-    \item Luis Garc\'ia Ramos 
-    \item Tiziano Zito
+    \item Tiziano Zito, Institut f\"ur Psychologie, Humboldt Universit\"at zu Berlin    \item Rike-Benjamin Schuppner, Institute for Theoretical Biology, Humboldt-Universit\"at zu Berlin, Germany.
+    \item St\'efan van der Walt ,Researcher, Leader of the Software Working Group, Berkeley Institute for Data Science, University of California at Berkeley, USA.
+    \item Josu\'e Mart\'inez Moreno, PhD Student at Research School of Earth Sciences of the Australian National University, Canberra, Australia.
+    \item  Florencia Noriega, Professor of Software Engineering at CODE University of Applied Sciences, Berlin, Germany.
+   % \item Lorena Barba (Associate Professor of Mechanical and Aerospace Engineering, School of Engineering and Applied Science, the George Washington University, USA).
+   \item Madicken Munk, Postdoctoral Researcher at the  Data Exploration Lab, National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign, USA.
+ \item Kathryn D. Huff, Assistant Professor, Department of Nuclear, Plasma, and Radiological Engineering, University of Illinois at Urbana-Champaign, USA.
+  \item Fernando P\'erez, Assistant Profesor, Berkeley institute of Data Science, University of California at Berkeley, USA.
+\item Ricardo M\'endez Fragoso, Professor of Physics, Faculty of Sciences of the National Autonomous University of Mexico.
+ % \item Carlos Echeverr\'ia Serur
+    %\item Luis Garc\'ia Ramos
     \item \add[Josue]{Who else may be interested? Ideally we should invite people from the US, and America Latina}
 \end{itemize}
 
-Note: The budget will fund travel, accommodation and \textit{Per Diem} expenses of lecturers and organizers. Typically, organizers also serve as lecturers. The budget may not allow for funding of organizers who do not actively participate in the school as lecturers. Additional budget will be use to support accommodation or travel expenses of international and local students.
-
-\section*{Scope}
-
-The Advanced Scientific Programming in Python (ASPP) - Latin America will follow the structure of the previous organized schools in Europe and Asia-Pacific. This intensive programming course aims to teach the rudiments of scientific python and how to use it in a reproducible, efficient and academic way. We are concerned with the current use of programming languages without fully understanding the foundations and their potential. We are also interested in concepts and tools to use programming as an open-source community for the purpose of scientific development. With only a week of lectures, we accept that these broad aims will be at best be partially realized. Nonetheless, the students will be exposed to a suite of resources which, if studied and practiced, will help to train a future scientists able to improve their codes, but also to make it reusable and easy to understand in case someone wants to reproduce their results.
-
-The course will be taught in a traditional manner with spoken lectures and discussions, along with practical sections which will supplement lectures and will encourage students to engage and take advantage of the lectures. The student is assumed to have prior knowledge on any coding language and a basic understanding of Python. The lectures will move at a rapid, though pedagogical pace. In general, the material covered will be more than the average amount an student could digest in a single week. Therefore to take fully advantage of this course, we encourage students to read the pre-course and post-course study. This particular topic requires devoted engagement and interaction not only during the lectures but after the course is finished. 
-
-This course is not \textit{per se} a how to code course, though some basics will be cover. This is also not an programming engineering or computer science course. Rather, the lectures are focused on how scientists can optimize their work-flow, as well as to facilitate the reproducibility, collaboration and maintenance of their codes. Correspondingly, there will be a strong hands-on component, where students are encouraged and expected to participate, discuss and proactively learn not only from the faculty but also from other students. 
-
-\section*{Participants}
-
-Participation is free, i.e. no fee is charged, however participates should take care of travel, living, and accommodation expenses by themselves.
-
-\subsection{Prerequisites}
-There are only two requirements to ASPP - Latin America:
+\subsection*{Tutors (Preliminary List)}
 \begin{itemize}
-    \item Applicants are recommended to know programming and the basics of Python to get the most out of this Summer School.
-    \item Applicants should provide proof of their English proficiency, as all lectures will be on presented in English. At least, applicants should be able to understand lectures in English. Applicants are not required to provide results from a proficiency test. \note[Josue]{Is there something else to add? Shall we ask for a reference letter or something?}.
+    \item Carlos Echeverr\'ia Serur
+    \item Luis Garc\'ia Ramos
+    \item Florencia Noriega
+    \item ?
 \end{itemize}
 
-\section*{Lecture Topics}
+\section*{Participants}
+Participation is free, i.e. no fee is charged, however participates should take care of travel, living, and accommodation expenses by themselves.
+We may be able to provide a small travel allowance if resources are sufficient (see ``Funding" below).
 
-These lectures will build from feedback obtained during the previous ASPP-Europe and ASPP-Asiapacific schools (topics include some of the potential speakers).
+\pagebreak
+
+\subsection*{Admission Requirements}
+These are the requirements for participating in ASPP - Latin America:
+\begin{itemize}
+
+    \item Applicants should be Masters, PhD students, Postdocs or Research Scientists in the natural or social sciences, engineering or mathematics, at an institution in South, Central or North America. Priority will be given to applicants from Latin America and applicants from underrepresented groups.
+    \item Applicants are absolutely required to know a high-level programming language used in scientific computing (for example, C, C++, Java, Fortran, MATLAB, etc.) and the basics of Python to get the most out of this Summer School.
+    \item Applicants should provide proof of their English proficiency by providing a letter of motivation and a curriculum vitae of the applicant written in the English language. Applicants are not required to provide results from a proficiency test. \note[Josue]{Is there something else to add? Shall we ask for a reference letter or something?} \note[Luis]{The application form should require a letter of motivation and a short resume-bio of the participant, this should be enough.}
+    \end{itemize}
+
+\section*{Lectures }%of the Summer School}
+
+All lectures will be taught in the English Language. In order to ensure the excellence of the summer school and fulfill the high standards of the previous installments of the school, the lectures consist of a fixed program developed by the Organizing Committee and will build from the courses already developed during the ASPP-Europe and ASPP-Asia Pacific schools (topics include some of the potential speakers).
 
 \begin{itemize}
-    \item Version control (GitHub) - 
-    \item Tidy data analysis and visualization - Rich \note[Josue]{Perhaps change the structure and remove Tidy data?s}
-    \item Testing and debugging scientific code - Luis
-    \item Advanced NumPy - Carlos
-    \item Organizing, documenting, distributing  scientific code and contimuous integration - 
-    \item Advanced scientific Python: context managers and generators - 
-    \item Writing parallel applications in Python - 
-    \item Profiling and speeding up scientific code with Cython and numba - 
+    \item Version control (Git and GitHub) -
+    \item Tidy data analysis and visualization - Ricardo M\'endez Fragoso \note[Josue]{Perhaps change the structure and remove Tidy data?s}
+    \item Testing and debugging scientific code - %Luis (?)
+    \item Advanced NumPy - Carlos Echeverr\'ia Serur
+    \item Organizing, documenting, distributing  scientific code and continuous integration -
+    \item Advanced scientific Python: context managers and generators -
+    \item Writing parallel applications in Python -
+    \item Profiling and speeding up scientific code with Cython and Numba -
 \end{itemize}
 
 \subsection*{Schedule}
@@ -276,23 +309,61 @@ Time & Topic & Speaker & Tutors \\
 \end{tabularx}
 \end{center}
 
-\note[Josue]{I've remove 1 hour from the lunch break so people can go earlier home, do you think we should use that hour or should'nt?}
+\note[Josue]{I've removed 1 hour from the lunch break so people can go earlier home, do you think we should use that hour or shouldn't?}
+\note[Luis and Carlos]{We think they should have two hours of lunch break (to be discussed)}
 
-\subsection*{Additional materials}
 
-\subsection*{Partner Organizations (Funding)}
+%\subsection*{Additional materials}
+%\note[Carlos]{what should go here?}
+
+\section*{Estimated Costs}
+The budget will fund travel, accommodation and daily expenses of lecturers and organizers. Organizers can also serve as lecturers or tutors since the budget may not allow for funding of organizers who do not actively participate in the school as lecturers. Additional resources will be used to support accommodation or travel expenses of international and local students.
+
+\subsection*{Estimated costs per Faculty Member (should be covered by the organizers)}
 \begin{itemize}
-    \item School of Science (UNAM) - 
-    \item CONACYT - 
-    
-    \item \add[Josue]{More Options}
+    \item Flight (from Europe or US): Approx. 800USD 
+    \item Accommodation in CDMX: Approx. 400USD
+    \item Local Transport: Approx. 100USD
+    \item Food for the entire duration of the conference: Approx. 200USD
+\end{itemize}
+
+\pagebreak
+\subsection*{Estimated costs of Organization (sholuld be covered by the organizers)}
+\begin{itemize}
+  \item Computer Rental (40 computers): Approx. ???USD
+  \item Venue Rental: Approx. ???USD
+  \item Social Activity (Trip to Teotihuac\'an): Approx. ???USD
+  \item Airport-Venue Transport: Approx. ???USD
+\end{itemize}
+
+\subsection*{Estimated average costs per Participant (should be covered by the participants)}
+\begin{itemize}
+  \item Flight (From a Latin American Country): Approx. 500USD
+  \item Accommodation in CDMX: Approx. 300USD
+  \item Local Transport: Approx. 50USD
+  \item Food for the entire duration of the conference: Approx. 150USD
+\end{itemize}
+
+
+
+
+\subsection*{Tentative Partner Organizations (Sponsors/Funding)}
+\begin{itemize}
+    \item Secretar\'ia de Ciencia, Tecnolog\'ia e Innovaci\'on de la CDMX.
+    \item Faculty of Sciences (FCIENCIAS-UNAM).
+    \item Instituto de Investigaciones en Matem\'aticas Aplicadas (IIMAS-UNAM)
+    \item Consejo Nacional de Ciencia y Tecnolog\'ia (CONACYT)
+    \item Instituto Latinoamericano de la Comunicaci\'on Educativa (ILCE)
+    \item Instituto Polit\'ecnico Nacional (IPN)
 \end{itemize}
 
 \section*{Policies}
 
 \subsection*{Inclusiveness}
+ We are striving hard to obtain a group of participants which is international and gender-balanced.
 
 \subsection*{Behavior}
+See \url{https://numfocus.org/code-of-conduct}{Code of conduct}
 
 \subsection*{}
 
