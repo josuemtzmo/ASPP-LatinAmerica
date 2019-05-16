@@ -1,0 +1,284 @@
+\documentclass{article}[11pt]
+\usepackage[utf8]{inputenc}
+\usepackage[affil-it]{authblk}
+\usepackage{tabularx,colortbl}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[margin=1.4in]{geometry}
+
+\usepackage{trackchanges}
+
+%%   TrackChanges adds the following 5 commands to allow for collaborative
+%%   editing of LaTeX documents.
+%%
+%%     \add[editor]{text to add}
+%%     \remove[editor]{text to remove}
+%%     \change[editor]{text to remove}{text to add}
+%%     \annote[editor]{text to annotate}{note}
+%%     \note[editor]{note}
+
+\title{%
+Advanced Scientific Programming in Python - Latin America
+\\ \vspace{0.2cm}
+\large Executive Summary  [Draft \today]}
+\date{July 2020}
+\author{M\'exico City, M\'exico}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\end{center}
+
+\section*{Introduction}
+Scientific software development is no longer reserved for a reduced number of
+scientist working in highly specialized branches in the field of computer
+science. Powerful programming techniques are now available to the general
+scientific community and across many academic and non-academic institutions and
+fields making \emph{the ability to program} a highly desired and important
+skill to conduct state of the art research. However, there is a considerable
+lack of education regarding scientific programming practices and techniques in
+the community of scientists who are generally not properly trained for the
+creation and maintenance of scientific software. The result is the creation of
+poorly written scientific code which is not efficient and becomes very
+limited. Very often scientists spend (waste) a significant amount time
+writing, maintaining and debugging sub-optimal self-written code, often
+reinventing the wheel, instead of being able to focus their efforts on their
+topics of research.
+
+With the explicit intent of responding to these needs in the scientific
+community the \emph{Advanced Scientific Programming in Python Summer School}
+was launched in Europe twelve years ago, providing the scientific community
+with a unique opportunity to learn techniques and tools to develop  efficient
+and sustainable code with hands-on experience on the subset of these techniques
+that matter most, teaching them clean language design, extensibility of code,
+and good practices in scientific computing and data visualization. The summer
+school grew quickly, and in recent years, the number of applications  to the
+school has grown to be over 300 applications per year, for the 30 places
+typically available (with a 50/50 gender split). Each year, this self funded
+effort has attracted scientist who want to acquire software  engineering skills
+to tackle new challenges in their areas of expertise for the  benefit of the
+scientific community.
+
+The purpose of this project is to bring the benefits and teachings of the
+school to a latin american audience. For this, we propose the creation of the
+\emph{Advanced Scientific Programming in Python Summer School - Latin America}
+with the aim of bringing together scientists from all latin american countries
+in order to participate in the first ASPP in the American continent. During the
+7-day intensive course, participants will explore and learn the fundamentals
+ideas of scientific code development from leading experts in the field. We aim
+to hold the first instance of the school in Mexico City due to its position as
+a leading developing country of latin america and due to its being home of the
+largest and most prestigious research institution in the Ibero-American
+countries.
+
+In line with the \emph{open} commitment of the scientific Python community, the
+complete material, lectures, exercises, solutions, and code produced will be
+available online under a Creative Commons license. The summer school will not
+charge fees, and we expect it to remain free from commercial interests. This
+opens up the possibility of using the material for the development and creation
+of new courses tailored to the specific need of a specific target audience, for
+example, science teachers, college students, high school students, etc.
+
+The previous success of the other instances of the summer school is very highly
+related to the engaging and interactive environment that has been created by a
+group of highly capable and accessible scientists who have created a teaching
+methodology which fosters learning. The teaching and learning approach itself
+is largely inspired by the Agile technique from software engineering, which
+promotes flexible and responsive experience, and nurtures learning
+opportunities. In order to reproduce this environment, we aim to hold the
+school in a remote location in Mexico City in order to create a profound
+learning experience away from distractions and daily routines. Informal chats
+during shared meals and recreation time and during coding exercises will
+provide opportunities to all participants to form close professional and
+personal relationships, fostering future collaborations and openness within the
+next generation of Latin-American scientists.
+
+
+\section*{Structure of the Summer School}
+The summer school Advanced Scientific Programming in Python - Latin America
+(ASPP~-~LA) will follow the structure and curriculum of the previously
+organized schools in Europe (2008-2019) and the Asia-Pacific region (2018 and
+2019).
+
+During the summer school, we will teach a selection of advanced programming
+techniques and best practices in software development (which are standard in
+the industry) to researchers in the natural and social sciences, engineering
+and mathematics. The school will  consist of lectures and discussions along
+with practical hands-on exercises which will supplement the lectures and will
+let participants practice the techniques. All of the newly acquired skills will
+be tested in a real programming project: participants will team up to develop
+an entertaining scientific computer game.
+
+We use the Python programming language for the entire course. Python works as a
+simple programming language for beginners, but more importantly, it also works
+great in scientific simulations and data analysis. We show how clean language
+design, ease of extensibility, and the great wealth of open source libraries
+for scientific computing and data visualization are driving Python to become a
+standard tool for the programming scientist.
+
+\section*{Target Audience}
+The summer school is targeted at master or phd students, as well as post-docs
+and research scientists. Competence in Python or in another language such as
+Java, C/C++, MATLAB, or Mathematica is required, and basic knowledge of Python
+is assumed. The course is planned to allow for an attendance of 30
+international students (50/50 gender split), who fund their own travel and stay
+for a week. Importantly, participation in the school is free, i.e. no fee is
+charged, however participates should take care of travel, living, and
+accommodation expenses by themselves. We aim to provide travel allowance for a
+number of participants if resources are sufficient (see section ``Funding"
+below).
+
+\section*{Preliminary Program}
+These lectures will build from feedback obtained during the previous ASPP-
+Europe and ASPP-Asia-Pacific schools. The contents of the lectures, the
+exercises and the programming project are developed by all faculty members
+together in order to ensure a coherent set of materials, which gets further
+refined by integrating the student feedback collected by a survey at the end of
+the course.
+
+\begin{itemize}
+\item Day 1: Best Programming Practices - Best Practices for Scientific
+Computing - Version control with Git and how to contribute to open source with
+GitHub - Object Oriented Programming and Design Patterns.
+
+\item Day 2: Software Carpentry - Test-driven development, unit testing and
+quality assurance - Debugging, profiling and benchmarking techniques -
+Advanced Python 1: idioms, useful built-in data structures, generators.
+
+\item Day 3: Scientific Tools for Python – Advanced NumPy – The Quest for
+Speed 1: Interfacing to C with Cython – Programming in teams.
+
+\item Day 4: The Quest for Speed 2: Writing parallel applications in Python  –
+Programming project.
+
+\item Day 5: Efficient Memory Management – Advanced Python 2: decorators and
+context managers – Programming project.
+
+\item Day 6: Practical Software Development – Programming project – The
+Scientific Game Tournament.
+\end{itemize}
+
+% \begin{itemize}
+%     \item Best Programming Practices for Scientific Computing - Version
+% control with Git and how to contribute to open source with GitHub - Object
+% Oriented Programming and Design Patterns.
+%     \item Tidy data analysis and visualization
+%     \item Testing and debugging scientific code
+%     \item Advanced NumPy
+%     \item Organizing, documenting, distributing  scientific code and
+% continuous integration
+%     \item Advanced scientific Python: context managers and generators
+%     \item Writing parallel applications in Python
+%     \item Profiling and speeding up scientific code with Cython and Numba
+% \end{itemize}
+
+\section*{Preliminary Faculty}
+The number of speakers is approximately 10, and they also act as tutors for
+the students during the course. All speakers are computational scientists or
+software developers with a PhD in relevant disciplines. Speakers do not
+receive any honorarium, and take part in the summer school on their spare time:
+\begin{itemize}
+\item Tiziano Zito, Institute of Psychology, Humboldt Universit\"at zu Berlin,
+Germany.
+
+\item Rike-Benjamin Schuppner, Institute for Theoretical Biology, Humboldt-
+Universit\"at zu Berlin, Germany.
+
+\item St\'efan van der Walt, Berkeley Institute for Data Science, University
+of California at Berkeley, USA.
+
+\item Madicken Munk, Postdoctoral Researcher at the  Data Exploration Lab,
+National Center for Supercomputing Applications, University of Illinois at
+Urbana-Champaign, USA.
+
+\item Kathryn D. Huff, Assistant Professor, Department of Nuclear, Plasma, and
+Radiological Engineering, University of Illinois at Urbana-Champaign, USA.
+
+\item Ricardo M\'endez Fragoso, Professor of Physics, Faculty of Sciences of
+the National Autonomous University of Mexico.
+\end{itemize}
+
+
+\section*{Organizing Committee}
+\begin{itemize}
+\item Carlos Echeverr\'ia Serur, PhD Candidate at the Institut f\"ur
+Mathematik of the Technische Universit\"at Berlin (Alumnus ASPP-Europe
+2018).
+
+\item Luis Garc\'ia Ramos, PhD Candidate at the Institut f\"ur Mathematik
+of the Technische Universit\"at Berlin (Alumnus ASPP-Europe 2018).
+
+\item Josu\'e Mart\'inez Moreno, PhD Candidate at Research School of Earth
+Sciences of the Australian National University, Canberra (Alumnus ASPP-
+APAC 2019).
+
+\item Ricardo M\'endez Fragoso, Professor at Department of Physics, School
+of Sciences of the National Autonomous University of Mexico, (Invited to
+ASPP-Europe 2019).
+
+\item Florencia Noriega, Software Engineering Lecturer at CODE University
+of Applied Sciences, Berlin (Alumna ASPP-Europe 2016).
+
+\item Tiziano Zito, from the Institut f\"ur Psychologie of the Humboldt
+Universit\"at zu Berlin (Co-Founder of ASPP-Europe).
+\end{itemize}
+
+\section*{Funding}
+The total budget of the event varies in range between 10,000 and 20,000 USD,
+depending on how much we are able to obtain as donations (facilities, lecture
+rooms, laptops, lodging for faculty and students).
+
+The budget will fund travel, accommodation and daily expenses of lecturers and
+organizers (5,400USD). It will also cover the rent of 15 laptops (1,500USD),
+organize catering for breaks (400USD) and lunch for the speakers (700USD), as
+well as 2 social events (2,000USD). Students pay their own travel and
+accommodation costs. In order to open the school to a population of students
+from developing Latin American countries who do not have access to funding, we
+would like to offer financial support to fund travel or accommodation expenses
+for a number of international and local students (10,000USD)
+
+% \subsection*{Estimated costs per Faculty Member (should be covered by the
+% organizers)}
+% \begin{itemize}
+%     \item Flight (from Europe or US): Approx. 800USD
+%     \item Accommodation in CDMX: Approx. 400USD
+%     \item Local Transport: Approx. 100USD
+%     \item Food for the entire duration of the conference: Approx. 200USD
+% \end{itemize}
+%
+% \subsection*{Estimated costs of Organization (should be covered by the
+% organizers)}
+% \begin{itemize}
+%   \item Computer Rental (40 computers): Approx. ???USD
+%   \item Venue Rental: Approx. ???USD
+%   \item Social Activity 1 (Trip to Teotihuac\'an): Approx. 1000USD
+%   \item Social Activity 2 (Trip to ???): Approx. 1000USD
+%   \item Airport-Venue Transport: Approx. ???USD
+% \end{itemize}
+%
+% \subsection*{Estimated average costs per Participant (should be covered by
+% the participants)}
+% \begin{itemize}
+%   \item Flight (From a Latin American Country): Approx. 500USD
+%   \item Accommodation in CDMX: Approx. 300USD
+%   \item Local Transport: Approx. 50USD
+%   \item Food for the entire duration of the conference: Approx. 150USD
+% \end{itemize}
+
+\subsection*{Tentative Partner Organizations (Sponsors/Co-Organizers)}
+\begin{itemize}
+    \item Secretar\'ia de Ciencia, Tecnolog\'ia e Innovaci\'on de la CDMX
+    (SECTEI).
+    \item Faculty of Sciences (FCIENCIAS-UNAM).
+    \item Instituto de Investigaciones en Matem\'aticas Aplicadas (IIMAS-UNAM)
+    \item Consejo Nacional de Ciencia y Tecnolog\'ia (CONACYT)
+    \item Instituto Latinoamericano de la Comunicaci\'on Educativa (ILCE)
+    \item Instituto Polit\'ecnico Nacional (IPN)
+\end{itemize}
+
+\section*{Additional Information}
+More information and teaching materials from previous instances of the school
+can be found at the following website: \url{http://python.g-node.org}
+
+\end{document}
